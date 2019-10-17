@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SiswaActivity">
+
+            <TextView
+                android:id="@+id/txt_NIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"
+                android:text="NIS"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_NIS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:inputType="number"
+                app:layout_constraintLeft_toLeftOf="@id/guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_Nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/txt_NIS"
+                android:layout_marginTop="30dp"
+                android:text="Nama"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_Nama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                app:layout_constraintLeft_toLeftOf="@id/guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtxt_NIS" />
+
+            <TextView
+                android:id="@+id/txt_Alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/txt_Nama"
+                android:layout_marginTop="30dp"
+                android:text="Alamat"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/edtxt_Alamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/edtxt_Nama"
+                />
+
+            <TextView
+                android:id="@+id/txt_Handphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/txt_Alamat"
+                android:layout_marginTop="30dp"
+                android:text="Handphone"
+                android:textSize="25sp"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_Handphone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="phone"
+                app:layout_constraintLeft_toLeftOf="@id/guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtxt_Alamat" />
+
+            <TextView
+                android:id="@+id/txt_Keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/txt_Handphone"
+                android:layout_marginTop="35dp"
+                android:text="Keterangan"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/edtxt_keterangan"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toBottomOf="@id/edtxt_Handphone"
+                app:layout_constraintLeft_toLeftOf="@id/guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="20dp"
+                android:inputType="text|textMultiLine"
+                />
+            <Button
+                android:id="@+id/btn_ok_siswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtxt_keterangan"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="135dp"
+                android:onClick="popUp"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.33" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
